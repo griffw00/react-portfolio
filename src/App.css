@@ -1,0 +1,36 @@
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Light gray background */
+    margin: 0; /* Remove default body margin */
+  }
+  
+  .App {
+    min-height: 100vh; /* Ensure App container takes up at least 100% of viewport height */
+  }
+  
+  .container {
+    width: 100%; /* Fill the entire width of the parent container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #343a40; /* Dark gray footer background */
+    color: white;
+  }
+  

@@ -1,0 +1,52 @@
+/* Hero.css */
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    height: calc(100vh - 300px); /* Adjust height to fill the viewport minus padding */
+    background-color: white;
+  }
+  
+  .hero-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-icons .icon {
+  font-size: 50px; /* Adjust the size as needed */
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
+  

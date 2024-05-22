@@ -1,0 +1,42 @@
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project-sub-container {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black; /* Thin black border */
+    background-color: white; /* White background */
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    color: black; /* Black text color */
+  }
+  
+  .project-sub-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-sub-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .project-image {
+    margin-bottom: 10px;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projects-header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: auto;
+  }
+  

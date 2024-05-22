@@ -1,0 +1,38 @@
+/* About.css */
+
+.about-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px; /* Adjusted padding for more space around content */
+    height: (100vh - 200px);
+    background-color: white;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+  }
+  
