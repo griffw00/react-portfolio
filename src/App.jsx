@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useEffect } from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
+import dotenv from 'dotenv';
 import './App.css';
 import Hero from "./components/Hero"; 
 import About from './components/About';
@@ -9,6 +10,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar'; 
 
 function App() {
+
 
   // Import open sans font
   useEffect(() => {

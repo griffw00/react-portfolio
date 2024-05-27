@@ -2,15 +2,21 @@ import {React, useRef} from 'react';
 import "./styles/contact.css"
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
+    const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
+    const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
+
+
     emailjs
-      .sendForm('SERVICE_KEY', 'TEMPLATE_KEY', form.current, {
-        publicKey: 'PUBLIC_KEY',
+      .sendForm(serviceKey, templateKey, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
