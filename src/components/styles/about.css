@@ -8,6 +8,7 @@
     padding: 100px; /* Adjusted padding for more space around content */
     height: (100vh - 200px);
     background-color: white;
+    margin-bottom: 100px;
   }
   
   .about-text {

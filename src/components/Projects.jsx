@@ -21,13 +21,13 @@ const Projects = () => {
   const projectData = [
     {
       name: 'JFitness',
-      technologies: 'Java',
+      technologies: 'Java, Swing',
       image: projectImage1,
       description: 'This is my project description. This is my project description. This is my project description. This is my project description. This is my project description. This is my project description.',
     },
     {
       name: 'Portfolio',
-      technologies: 'React, Chakra',
+      technologies: 'React, Chakra, EmailJS',
       image: projectImage1,
       description: "You're looking at it!",
     },
