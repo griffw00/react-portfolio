@@ -13,9 +13,7 @@ const About = () => {
               About Me 👨‍💻
             </h1>
             <p>
-            I'm currently pursuing a second degree in computer science at the University of British Columbia, building upon my previous background in Microbiology and Immunology.
-            Passionate about software development, I'm actively seeking internships to expand my skillset. 
-            In my free time, you can find me playing soccer, hiking, gaming, or swimming.
+            Hey! My name is Griff and I’m currently studying Computer Science (BCS) at the University of British Columbia and working part-time as an IT Support Specialist. I’m eager to bring my skills in React.js, JavaScript, Java, and Python to Software Development roles. During my free time, you’ll catch me at the gym, swimming, playing video games, or diving into my next personal project.
             </p>
         </div>
     </div>
