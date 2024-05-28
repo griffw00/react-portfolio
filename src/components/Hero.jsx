@@ -4,17 +4,6 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons from reac
 import "./styles/hero.css";
 
 const Hero = () => {
-
-    // useEffect(() => {
-    //     const { hash } = window.location;
-    
-    //     if (hash === '#hero') {
-    //       const homeSection = document.getElementById('hero');
-    //       if (homeSection) {
-    //         homeSection.scrollIntoView({ behavior: 'smooth' });
-    //       }
-    //     }
-    //   }, []);
     
     return(
         <div className="hero-container" id = "hero">

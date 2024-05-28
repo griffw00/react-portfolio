@@ -45,18 +45,6 @@ const Projects = () => {
       <ProjectsAccordion projectData = {projectData}/>
     </div>
   );
-
-  // return (
-  //     <section id="projects" className="section">
-  //     <h1 className="projects-header">Projects</h1>
-  //     <div className="project-container">
-  //       {projectData.map((project, index) => (
-  //         <Project key={index} {...project} />
-  //       ))}
-  //     </div>
-  //   </section>
-  // );
-
 };
 
 export default Projects;

@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className='form-header'> Let's Chat! ☕ </h1>
+      <h1 id = "contact" className='form-header'> Let's Chat! ☕ </h1>
         <form className = "form-container" ref={form} onSubmit={sendEmail}>
 
           <div className='form-sub-container'>
