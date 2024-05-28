@@ -7,25 +7,27 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
-    // const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
-    // const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
-    // const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
+    const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
+    const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
+    const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
 
 
-    // emailjs
-    //   .sendForm(serviceKey, templateKey, form.current, {
-    //     publicKey: publicKey,
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log('SUCCESS!');
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error.text);
-    //     },
-    //   );
+    emailjs
+      .sendForm('123', templateKey, form.current, {
+        publicKey: '123',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+      form.current.reset();
   };
 
   return (

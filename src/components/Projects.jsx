@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles/projects.css"
-import projectImage1 from "../assets/landing.png"
+import jfitness from "../assets/jfitness.png"
+import smartscience from "../assets/smartscience.png"
+import gamerecommender from "../assets/gamerecommender.png"
+import reactportfolio from "../assets/reactportfolio.png"
 import ProjectsAccordion from './ProjectsAccordion';
 
 
@@ -22,20 +25,26 @@ const Projects = () => {
     {
       name: 'JFitness',
       technologies: 'Java, Swing',
-      image: projectImage1,
-      description: 'This is my project description. This is my project description. This is my project description. This is my project description. This is my project description. This is my project description.',
+      image: jfitness,
+      description: 'Going to the gym is a significant part of my life, which inspired me to create JFitness, an application designed to help users track their gym schedules and progress. This project was my first personal project and taught me several key concepts, including Object-Oriented Programming (OOP), data persistence, the implementation of a graphical user interface (GUI).',
     },
     {
       name: 'Portfolio',
-      technologies: 'React, Chakra, EmailJS',
-      image: projectImage1,
-      description: "You're looking at it!",
+      technologies: 'React',
+      image: reactportfolio,
+      description: "My very first attempt at creating a personal portfolio! Throughout this project, I've had the opportunity to refine my skills in React and JavaScript. This project served as a platform for me to expand my knowledge base by learning and integrating libraries such as EmailJS, dotenv, and ChakraUI. Through the process of building this portfolio, I gained valuable experience in project management, design implementation, and showcasing my skills and projects effectively.",
     },
     {
-      name: 'Game Generator',
+      name: 'Smart Science (BCS Hackathon 2024)',
+      technologies: 'React',
+      image: smartscience,
+      description: 'Our team, inspired by our background in the life sciences, created an interactive and educational science tool for children. This hackathon was my exposure to React and Git, where I gained a solid understanding of React components, state management, and hooks, as well as essential Git operations such as branching, committing changes, and merging code',
+    },
+    {
+      name: 'Random Game Generator',
       technologies: 'HTML, CSS, Javascript',
-      image: projectImage1,
-      description: 'This is my project description',
+      image: gamerecommender,
+      description: 'This personal project stemmed from my love for gaming and a desire to find free games during my downtime. Using Vanilla JavaScript, HTML, and CSS, I crafted a game recommender that fetches real-time data from Rapid API and parses it for display. It marked my introduction to pure HTML and CSS, alongside API calls. Through this project, I explored the fundamental of RESTful principles.',
     },
   ];
 

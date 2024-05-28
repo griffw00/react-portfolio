@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 70%;
   margin: auto;
-  margin-bottom: 75px;
+  margin-bottom: 200px;
 }
 
 .projects-header {
@@ -32,6 +32,13 @@
   font-family: 'Open sans', sans-serif;
 }
 
+.project-desc {
+  display: inline-block;
+  vertical-align: top; /* here */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
 
 .accordion-container {
   width: 100%; /* Adjust width to match the container */
@@ -50,8 +57,9 @@
 
 .accordion-panel {
   font-size: 1em;
-  height: 200px; /* Set a fixed height */
+  height: 300px; /* Set a fixed height */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  display: flex;
 }
 
 .accordion-item {

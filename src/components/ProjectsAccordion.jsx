@@ -29,7 +29,7 @@ const ProjectsAccordion = ({ projectData }) => {
                     <Box flex="0 0 auto">
                         <img src={project.image} alt={project.name} style={{ width: '350px', marginRight: '20px' }} />
                     </Box>
-                    <Box flex="1">
+                    <Box className = "project-desc" flex="1">
                         <Text>{project.description}</Text>
                     </Box>
                 </Flex>
