@@ -7,44 +7,48 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
-    const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
-    const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
-    const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
+    // const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
+    // const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
+    // const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
 
 
-    emailjs
-      .sendForm(serviceKey, templateKey, form.current, {
-        publicKey: publicKey,
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    // emailjs
+    //   .sendForm(serviceKey, templateKey, form.current, {
+    //     publicKey: publicKey,
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log('SUCCESS!');
+    //     },
+    //     (error) => {
+    //       console.log('FAILED...', error.text);
+    //     },
+    //   );
   };
 
   return (
-    <form className = "form-container" ref={form} onSubmit={sendEmail}>
-       <h1 className='form-header'> Contact Me </h1>
-        <div className='input-container'>
-          <input type="text" name="user_name" placeholder='Your Name...' required/>
-        </div>
+    <>
+      <h1 className='form-header'> Let's Chat! ☕ </h1>
+        <form className = "form-container" ref={form} onSubmit={sendEmail}>
 
-        <div className='input-container'>
-          <input type="email" name="user_email" placeholder="Your Email..." required/>
-        </div>
-
-        <div className='message-container'>
-          <textarea name="message" placeholder='Your Message...' required/>
-        </div>
-      
-        <input className = "submit-btn" type="submit" value="Send" />
-    </form>
+          <div className='form-sub-container'>
+                <div className='input-container'>
+                  <input type="text" name="user_name" placeholder='Ex. John Doe' required/>
+                </div>
+                <div className='input-container'>
+                  <input type="email" name="user_email" placeholder="Ex. johndoe@email.com" required/>
+                </div>
+          </div>
+            
+          <div className='message-container'>
+            <textarea name="message" placeholder='Your Message...' required/>
+          </div>
+          
+          <input className = "submit-btn" type="submit" value="Send" />
+        </form>
+    </>
   );
 };
 
