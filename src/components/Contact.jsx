@@ -15,8 +15,8 @@ const Contact = () => {
 
 
     emailjs
-      .sendForm('123', templateKey, form.current, {
-        publicKey: '123',
+      .sendForm(serviceKey, templateKey, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
@@ -35,15 +35,14 @@ const Contact = () => {
       <h1 id = "contact" className='form-header'> Let's Chat! ☕ </h1>
         <form className = "form-container" ref={form} onSubmit={sendEmail}>
 
-          <div className='form-sub-container'>
-                <div className='input-container'>
-                  <input type="text" name="user_name" placeholder='Ex. John Doe' required/>
-                </div>
-                <div className='input-container'>
-                  <input type="email" name="user_email" placeholder="Ex. johndoe@email.com" required/>
-                </div>
+          
+          <div className='input-container'>
+            <input type="text" name="user_name" placeholder='Ex. John Doe' required/>
           </div>
-            
+          <div className='input-container'>
+             <input type="email" name="user_email" placeholder="Ex. johndoe@email.com" required/>
+          </div>
+          
           <div className='message-container'>
             <textarea name="message" placeholder='Your Message...' required/>
           </div>
