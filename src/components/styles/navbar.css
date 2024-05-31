@@ -1,3 +1,4 @@
+
 *,
 ::before,
 *::after {
@@ -88,4 +89,11 @@
   height: 15px;
   top: 40px;
   transform: translateZ(0) rotate(0deg) skewX(-45deg) translate(2px, 0px);
+}
+
+/* Media Queries */
+@media (max-width: 750px){
+  .navbar-container {
+    display: none;
+  }
 }

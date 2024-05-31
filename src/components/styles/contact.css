@@ -85,14 +85,50 @@
   background-color: #718e83
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Media queries */
+
+@media (max-width: 750px) {
+  /* Form Container */
   .form-container {
-    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(210, 210, 210, 0.5); 
+    border-radius: 6px; 
   }
 
-  .submit-btn {
-    width: 100%;
-    padding: 15px;
+    /* Input and Message Containers */
+  .input-container,
+  .message-container {
+    width: 80%;
+    position: relative;
   }
 }
+
+@media (max-width: 500px) {
+  /* Form Container */
+  .form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(210, 210, 210, 0.5); 
+    border-radius: 6px; 
+  }
+
+    /* Input and Message Containers */
+  .input-container,
+  .message-container {
+    width: 80%;
+    position: relative;
+  }
+}
+
+

@@ -21,7 +21,7 @@
     width: 100%; /* Fill the entire width of the parent container */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center children vertically */
+    justify-content: space-between; /* Center children vertically */
     align-items: center; /* Center children horizontally */
     padding: 20px;
   }

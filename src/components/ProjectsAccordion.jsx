@@ -27,7 +27,7 @@ const ProjectsAccordion = ({ projectData }) => {
           <AccordionPanel pb={4}  pl="35px" className="accordion-panel">
                 <Flex align="center">
                     <Box flex="0 0 auto">
-                        <img src={project.image} alt={project.name} style={{ width: '350px', marginRight: '20px' }} />
+                        <img className = "project-image" src={project.image} alt={project.name} style={{ width: '350px', marginRight: '20px' }} />
                     </Box>
                     <Box className = "project-desc" flex="1">
                         <Text>{project.description}</Text>

@@ -40,7 +40,7 @@ const Contact = () => {
             <input type="text" name="user_name" placeholder='Ex. John Doe' required/>
           </div>
           <div className='input-container'>
-             <input type="email" name="user_email" placeholder="Ex. johndoe@email.com" required/>
+             <input id = "user-email" type="email" name="user_email" placeholder= "Ex. abc@email.com" required/>
           </div>
           
           <div className='message-container'>

@@ -51,3 +51,20 @@
   margin: 0 10px; /* Adjust the spacing between icons */
 }
   
+
+
+@media (max-width: 900px) {
+
+  /* .hero-image {
+    display: none; 
+  } */
+
+  .hero-container {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  .hero-image {
+    margin-top: 100px;
+  }
+}
