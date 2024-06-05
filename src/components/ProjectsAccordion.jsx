@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Flex, Text } from '@chakra-ui/react';
 import './styles/projects.css';
+import { FaGithub } from 'react-icons/fa'; // Import icons from react-icons library
 
 
 
@@ -14,9 +15,19 @@ const ProjectsAccordion = ({ projectData }) => {
           <h2>
           <AccordionButton className="accordion-button">
             <Box flex="1" textAlign="left" className="project-info">
-              <div className="project-name">
-                {project.name}
+              <div className = "header-wrapper">
+
+                <div className="project-name">
+                  {project.name}
+                </div>
+
+                <div className = "github-icon">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="icon"/>
+                  </a>
+                </div>
               </div>
+              
               <div className="project-technologies">
                 {project.technologies}
               </div>
