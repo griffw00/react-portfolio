@@ -28,7 +28,7 @@ const Projects = () => {
       technologies: 'Java, Swing',
       image: jfitness,
       link: "https://github.com/griffw00/java-fitness-app",
-      description: 'Going to the gym is a significant part of my life, which inspired me to create JFitness, an application designed to help users track their gym schedules and progress. This project was my first personal project and taught me several key concepts, including Object-Oriented Programming (OOP), data persistence, the implementation of a graphical user interface (GUI).',
+      description: 'Going to the gym is a significant part of my life, which inspired me to create JFitness, an application designed to help users track their gym schedules and progress. This project was my first personal project and taught me several key concepts, including Object-Oriented Programming (OOP), data persistence, and the implementation of a graphical user interface (GUI).',
     },
     {
       name: 'Portfolio',
@@ -42,7 +42,7 @@ const Projects = () => {
       technologies: 'React',
       image: smartscience,
       link: "https://github.com/griffw00/bcs-hack-app",
-      description: 'Our team, inspired by our background in the life sciences, created an interactive and educational science tool for children. This hackathon was my exposure to React and Git, where I gained a solid understanding of React components, state management, and hooks, as well as essential Git operations such as branching, committing changes, and merging code',
+      description: 'Our team, inspired by our background in the life sciences, created an interactive and educational science tool for children. This hackathon was my first exposure to React and Git, where I gained a solid understanding of React components, state management, and hooks, as well as essential Git operations such as branching, committing changes, and merging code',
     },
     {
       name: 'Random Game Generator',
