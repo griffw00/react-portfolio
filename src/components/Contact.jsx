@@ -1,33 +1,42 @@
 import {React, useRef} from 'react';
 import "./styles/contact.css"
-import emailjs from '@emailjs/browser';
+import axios from "axios"; 
 
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
 
-    const publicKey = import.meta.env.VITE_REACT_PORTFOLIO_PUBLIC_KEY;
-    const serviceKey = import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY;
-    const templateKey = import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY;
+    // Prevent page refresh
+    e.preventDefault(); 
 
+    const formData = new FormData(form.current); 
+    const templateParams = {
+      user_name: formData.get('user_name'),
+      user_email: formData.get('user_email'),
+      message: formData.get('message'),
+    };
 
-    emailjs
-      .sendForm(serviceKey, templateKey, form.current, {
-        publicKey: publicKey,
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    // Send request for back-end
+    axios.post('http://localhost:5000/send-email', {
+      serviceID: import.meta.env.VITE_REACT_PORTFOLIO_SERVICE_KEY,
+      templateID: import.meta.env.VITE_REACT_PORTFOLIO_TEMPLATE_KEY,
+      templateParams: templateParams,
+    })
+    .then(response => {
+      if (response.data.status === "success") {
+        console.log('Email sent');
+      } else {
+        console.log("Failed to send email");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
 
-      form.current.reset();
+    // Reset the form
+    form.current.reset(); 
   };
 
   return (

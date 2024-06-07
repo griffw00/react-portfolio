@@ -3,8 +3,8 @@ import "./styles/navbar.css"
 
 const Navbar = () => {
     return (
-        <div class="navbar-container">
-            <nav class="navbar">
+        <div className="navbar-container">
+            <nav className="navbar">
                 <ul className="nav--list">
                 <li className="item"><a href="#hero">Home</a></li>
                 <li className="item"><a href="#about">About</a></li>
