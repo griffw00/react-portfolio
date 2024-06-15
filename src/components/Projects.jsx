@@ -56,7 +56,7 @@ const Projects = () => {
       technologies: 'React Native, Typescript',
       image: nativetodo,
       link: "https://github.com/griffw00/native-todo-list",
-      description: 'A mobile ToDo application built using React Native and Typescript. Coming soon! :)',
+      description: 'My first dabble with mobile applications! Native ToDo is a simple CRUD application build using TypeScript and React Native. Through this mini-project, I was able to learn the fundamentals of TypeScript and learn how to create functional components for mobile applications.',
     },
   ];
 
