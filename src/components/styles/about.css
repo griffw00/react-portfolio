@@ -49,11 +49,15 @@
   }
 
 
-  /* Mobile Phone */
-  @media (max-width: 320px) {
+  @media (max-width: 500px) {
     .about-image {
       display: none; 
     }
+  }
+
+
+  /* Mobile Phone */
+  @media (max-width: 320px) {
 
     .about-container {
       flex: 1;

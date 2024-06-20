@@ -72,6 +72,22 @@
   }
 }
 
+@media (max-width: 500px) {
+
+  .hero-image {
+    display: none; 
+  }
+
+  .hero-container {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  .hero-image {
+    margin-top: 100px;
+  }
+}
+
 /* Mobile */
 
 @media (max-width: 320px) {
