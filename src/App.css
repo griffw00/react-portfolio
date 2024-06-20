@@ -50,6 +50,22 @@
     transform: translateX(0%)
   }
 
+  /* Media Queries */
+  @media (max-width: 750px) {
+    .container {
+      padding: 25;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 750px) {
+    .container {
+      padding: 10;
+    }
+  }
+
+
+
 
 
   

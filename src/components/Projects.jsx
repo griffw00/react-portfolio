@@ -51,14 +51,14 @@ const Projects = () => {
       technologies: 'Python, AWS Bedrock',
       image: chefbot,
       link: "https://github.com/griffw00/CIC-Hackathon",
-      description: "During the UBC CIC Hackathon (2024), our team implemented a generative recipe chatbot using AWS Bedrock's foundation models. By applying retrieval-augmented generation (RAG) on a large recipe dataset, Chef Bot suggests recipes in response to user prompts. This project sharpened my Python skills but most importantly taught me how to integrate machine learning models into practical applications. It was an amazing opportunity to explore AWS technologies and experience firsthand how powerful AI can be in creating useful and interactive tools!",
+      description: "During the UBC CIC Hackathon (2024), our team implemented a generative recipe chatbot using AWS Bedrock's foundation models. By applying retrieval-augmented generation (RAG) on a large recipe dataset, Chef Bot suggests recipes in response to user prompts. This project was an amazing opportunity to explore AWS technologies, sharpen my python skills, and experience firsthand how powerful AI can be in creating useful and interactive tools!",
     },
     {
       name: 'RESTful API',
       technologies: 'Java, Spring Boot',
       image: restapi,
       link: "https://github.com/griffw00/spring-boot-rest-api",
-      description: "An API that was built using Java and Spring Boot. The API adheres RESTful principle and allows users to perform CRUD operations via HTTP requests. This project was a great way to solidify my Java skills and served as my introduction to the Spring framework.",
+      description: "An API that was built using Java and Spring Boot. My API adheres to RESTful principles and allows users to perform CRUD operations via HTTP requests. This project was a great way to solidify my Java skills and served as my introduction to the Spring framework.",
     },
     {
       name: 'Smart Science (BCS Hackathon 2024)',

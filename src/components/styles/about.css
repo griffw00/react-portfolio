@@ -2,6 +2,7 @@
 
 .about-container {
     display: flex;
+    flex: 1;
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +45,18 @@
     .about-container {
       flex-direction: column-reverse;
       margin-bottom: 75px;
+    }
+  }
+
+
+  /* Mobile Phone */
+  @media (max-width: 320px) {
+    .about-image {
+      display: none; 
+    }
+
+    .about-container {
+      flex: 1;
     }
   }
   

@@ -71,3 +71,11 @@
     margin-top: 100px;
   }
 }
+
+/* Mobile */
+
+@media (max-width: 320px) {
+  .hero-image {
+    display: none;
+  }
+}
