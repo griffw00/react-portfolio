@@ -34,7 +34,7 @@ const About = () => {
             I'm excited to apply my programming skills and enthusiasm to tech-related internship opportunities for Fall 2024!
             </p>
             <p>
-            During my free time, you’ll catch me at the gym, swimming, playing video games, or diving into my next personal project!
+            During my free time, you’ll catch me at the gym, swimming, playing video games, or diving into my next personal project.
             </p>
         </div>
       </div>
