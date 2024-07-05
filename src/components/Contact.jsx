@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 id = "contact" className='form-header'> Let's Chat! ☕ </h1>
+      <h1 id = "contact" className='form-header' style={{color: '#5c28d7'}}> Let's Chat! ☕ </h1>
         <form className = "form-container" ref={form} onSubmit={sendEmail}>
 
           
@@ -56,7 +56,7 @@ const Contact = () => {
             <textarea name="message" placeholder='Your Message...' required/>
           </div>
           
-          <input className = "submit-btn" type="submit" value="Send" />
+          <input className = "submit-btn" type="submit" value="Send" style={{color: 'white'}} />
         </form>
     </>
   );

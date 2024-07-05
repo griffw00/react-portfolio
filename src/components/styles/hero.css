@@ -58,13 +58,10 @@
 
 @media (max-width: 900px) {
 
-  /* .hero-image {
-    display: none; 
-  } */
 
   .hero-container {
     flex-direction: column;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
   }
 
   .hero-image {

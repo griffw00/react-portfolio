@@ -71,11 +71,11 @@
 .submit-btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  background-color: #6658a8; 
+  background-color: #5c28d7; 
   color: black;
   padding: 15px 30px;
   border: 2px; 
-  border-radius: 10px;
+  border-radius: 400px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
