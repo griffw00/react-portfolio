@@ -18,7 +18,7 @@ const About = () => {
                     <FaGithub className="about-icon"/>
                   </a>
                   {/* Email icon with link */}
-                  <a href="mailto:griffytech@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:griffytech@gmail.com">
                     <FaEnvelope className="about-icon"/>
                   </a>
               </div>

@@ -61,7 +61,7 @@ function App() {
               </div>
           </div>
           <footer>
-            <p>&copy; 2024 Griff Wong. All rights reserved.</p>
+            <p>&copy; 2024 Griff Wong. Made with love 💜.</p>
           </footer>
       </div>
     </ChakraProvider>
