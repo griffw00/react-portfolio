@@ -1,6 +1,5 @@
 /* contact.css */
 
-
 /* Form Header */
 .form-header {
   font-family: "Open Sans", sans-serif;
@@ -19,8 +18,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(210, 210, 210, 0.5); 
-  border-radius: 6px; 
+  border: 1px solid rgba(210, 210, 210, 0.5);
+  border-radius: 6px;
 }
 
 .input-container {
@@ -43,7 +42,7 @@
   width: 100%;
   padding: 15px;
   border: none;
-  border: 1px solid rgba(210, 210, 210, 0.5); 
+  border: 1px solid rgba(210, 210, 210, 0.5);
   border-radius: 6px;
   font-size: 16px;
   color: #333;
@@ -71,10 +70,10 @@
 .submit-btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  background-color: #5c28d7; 
+  background-color: #5c28d7;
   color: black;
   padding: 15px 30px;
-  border: 2px; 
+  border: 2px;
   border-radius: 400px;
   font-size: 16px;
   cursor: pointer;
@@ -83,7 +82,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #718e83
+  background-color: #718e83;
 }
 
 /* Media queries */
@@ -98,11 +97,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(210, 210, 210, 0.5); 
-    border-radius: 6px; 
+    border: 1px solid rgba(210, 210, 210, 0.5);
+    border-radius: 6px;
   }
 
-    /* Input and Message Containers */
+  /* Input and Message Containers */
   .input-container,
   .message-container {
     width: 80%;
@@ -120,16 +119,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(210, 210, 210, 0.5); 
-    border-radius: 6px; 
+    border: 1px solid rgba(210, 210, 210, 0.5);
+    border-radius: 6px;
   }
 
-    /* Input and Message Containers */
+  /* Input and Message Containers */
   .input-container,
   .message-container {
     width: 80%;
     position: relative;
   }
 }
-
-

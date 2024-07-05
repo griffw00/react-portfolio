@@ -1,71 +1,79 @@
 /* App.css */
 
-/* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: white; /* Light gray background */
-    margin: 0; /* Remove default body margin */
-  }
-  
-  .App {
-    min-height: 100vh; /* Ensure App container takes up at least 100% of viewport height */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white; /* Light gray background */
+  margin: 0; /* Remove default body margin */
+}
+
+.App {
+  min-height: 100vh; /* Ensure App container takes up at least 100% of viewport height */
+}
+
+.container {
+  width: 100%; /* Fill the entire width of the parent container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #343a40; /* Dark gray footer background */
+  color: white;
+}
+
+/* Fade in animations */
+
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+/* Loading screen */
+
+.loading {
+  transform: scale(2);
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading h1 {
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
   .container {
-    width: 100%; /* Fill the entire width of the parent container */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
-    padding: 20px;
+    padding: 25;
   }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #343a40; /* Dark gray footer background */
-    color: white;
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+  .container {
+    padding: 10;
   }
-
-  /* Fade in */
-
-
-  .hidden {
-    opacity: 0;
-    filter: blur(2px);
-    transition: all 1s;
-    transform: translateX(-100%)
-  }
-
-  .show {
-    opacity: 1;
-    filter: blur(0); 
-    transform: translateX(0%)
-  }
-
-  /* Media Queries */
-  @media (max-width: 750px) {
-    .container {
-      padding: 25;
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 750px) {
-    .container {
-      padding: 10;
-    }
-  }
-
-
-
-
-
-  
+}

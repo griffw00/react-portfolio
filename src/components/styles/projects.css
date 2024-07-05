@@ -8,7 +8,7 @@
 }
 
 .projects-header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   text-align: center;
   margin: 30px;
@@ -22,23 +22,22 @@
 .project-name {
   font-weight: bold; /* Optional, to differentiate the project name */
   font-size: 17.5px;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 
 .project-technologies {
   color: grey;
   font-style: italic;
   font-size: 12.5px;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 
 .project-desc {
   display: inline-block;
   vertical-align: top; /* here */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
-
 
 .accordion-container {
   width: 100%; /* Adjust width to match the container */
@@ -70,28 +69,23 @@
 .header-wrapper {
   display: flex;
   flex-direction: "row";
-  align-items: center; 
+  align-items: center;
 }
 
 .github-icon {
   margin-left: 5px;
 }
 
-
-
 /* Media Queries */
 @media (max-width: 1100px) {
-
   .project-image {
-    display: none; 
+    display: none;
   }
 }
 
-
 @media (max-width: 500px) {
-
   .project-image {
-    display: none; 
+    display: none;
   }
 
   .chakra-text {
@@ -103,13 +97,12 @@
     height: 30vh;
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     display: flex;
-  }  
+  }
 }
 
 @media (max-width: 320px) {
-
   .project-image {
-    display: none; 
+    display: none;
   }
 
   .chakra-text {
@@ -123,7 +116,4 @@
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     display: flex;
   }
-
 }
-
-  
