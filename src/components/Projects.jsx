@@ -8,6 +8,7 @@ import nativetodo from "../assets/native-todo.png"
 import chefbot from "../assets/chefbot.png"
 import restapi from "../assets/spring-rest-api.png"
 import ProjectsAccordion from './ProjectsAccordion';
+import { Cursor } from 'react-simple-typewriter';
 
 
 const Project = ({ name, technologies, image, description }) => {
@@ -78,7 +79,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container" id = "projects">
-      <h1 className="projects-header"> Projects</h1>
+      <h1 className="projects-header" style={{color: '#5c28d7'}}> Projects <Cursor id = "cursor"/></h1>
       <ProjectsAccordion projectData = {projectData}/>
     </div>
   );

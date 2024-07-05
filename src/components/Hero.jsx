@@ -1,25 +1,24 @@
-import {useEffect, React} from "react";
-import heroImage from "../assets/landing.png";
+import { React } from "react";
+import heroImage from "../assets/cat-yarn.gif";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons from react-icons library
 import "./styles/hero.css";
 
 const Hero = () => {
+
+    const [text] = useTypewriter({
+        words: ['Developer', 'Cat Owner', 'Scientist', 'Gamer', 'Soccer Player', 'Boba Lover'],
+        loop: 0,
+        typeSpeed: 75,
+        deleteSpeed: 100,
+    });
     
     return(
         <div className="hero-container" id = "hero">
             <div className="hero-text">
                 <h2>Hello, my name is</h2>
                 <h1>GRIFF</h1>
-                <div className="hero-icons">
-                {/* LinkedIn icon with link */}
-                <a href="https://www.linkedin.com/in/griff-wong" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="icon"/>
-                </a>
-                {/* GitHub icon with link */}
-                <a href="https://github.com/griffw00" target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="icon"/>
-                </a>
-            </div>
+                <h2 style = {{color: '#5c28d7'}}> A {text} <Cursor/></h2>
             </div>
             <div className="hero-image">
                 <img src={heroImage} alt= "Hero" />
