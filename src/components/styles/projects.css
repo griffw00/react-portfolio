@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .project-image {
     display: none;
   }
@@ -112,7 +112,7 @@
 
   .accordion-panel {
     display: flex;
-    height: 55vh;
+    height: auto;
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     display: flex;
   }

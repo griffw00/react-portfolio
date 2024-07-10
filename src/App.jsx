@@ -7,16 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import {
-  ThreeDots,
-  SpinningCircles,
-  Rings,
-  Circles,
-  Hearts,
-  Puff,
-  BallTriangle,
-  Bars,
-} from "react-loading-icons";
+import { SpinningCircles } from "react-loading-icons";
 
 function App() {
   // Import Open-Sans font
@@ -64,6 +55,7 @@ function App() {
     }
   }, [isLoading]); // Ensure that this function runs when isLoading changes
 
+  // Loading Screen
   if (isLoading) {
     return (
       <ChakraProvider>

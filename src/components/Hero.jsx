@@ -24,7 +24,6 @@ const Hero = () => {
         <h2>Hello, my name is</h2>
         <h1>GRIFF</h1>
         <h2 style={{ color: "#5c28d7" }}>
-          {" "}
           A {text} <Cursor />
         </h2>
       </div>

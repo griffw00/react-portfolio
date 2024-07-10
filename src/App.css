@@ -70,10 +70,3 @@ footer {
     padding: 25;
   }
 }
-
-/* Mobile */
-@media (max-width: 750px) {
-  .container {
-    padding: 10;
-  }
-}

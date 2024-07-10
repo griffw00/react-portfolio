@@ -49,7 +49,7 @@
 }
 
 .hero-icons .icon {
-  font-size: 50px; /* Adjust the size as needed */
+  font-size: 50px;
   margin: 0 10px; /* Adjust the spacing between icons */
 }
 
@@ -66,24 +66,13 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 500px) {
-  .hero-image {
-    display: none;
-  }
-
   .hero-container {
     flex-direction: column;
-    margin-bottom: 300px;
+    margin-bottom: 50vh;
   }
 
-  .hero-image {
-    margin-top: 100px;
-  }
-}
-
-/* Mobile */
-
-@media (max-width: 320px) {
   .hero-image {
     display: none;
   }

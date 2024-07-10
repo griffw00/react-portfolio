@@ -1,7 +1,5 @@
 /* About.css */
 
-/* about.css */
-
 .about-container {
   display: flex;
   justify-content: center;
@@ -97,8 +95,8 @@
   }
 
   .about-image {
-    margin-top: -75px;
     order: 1;
+    margin-top: -75px;
   }
 
   .about-container {
@@ -107,15 +105,18 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 500px) {
-  .about-image {
-    display: none;
+  .about-text {
+    margin-top: 0px;
   }
-}
 
-/* Mobile Phone */
-@media (max-width: 320px) {
   .about-container {
-    flex: 1;
+    margin: auto;
+    padding: auto;
+  }
+
+  .about-image {
+    margin-bottom: 50px;
   }
 }
