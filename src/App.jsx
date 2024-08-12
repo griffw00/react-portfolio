@@ -10,6 +10,16 @@ import Navbar from "./components/Navbar";
 import { SpinningCircles } from "react-loading-icons";
 
 function App() {
+  // Implement Loading Screen
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   // Import Open-Sans font
   useEffect(() => {
     const link = document.createElement("link");
@@ -23,16 +33,6 @@ function App() {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
-
-  // Implement Loading Screen
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
 
   // Animations for fade-ins
   useEffect(() => {
@@ -79,9 +79,9 @@ function App() {
           <div className="hidden">
             <Projects />
           </div>
-          <div className="hidden">
+          {/* <div className="hidden">
             <Contact />
-          </div>
+          </div> */}
         </div>
         <footer>
           <p>&copy; 2024 Griff Wong. Made with love 💜.</p>
