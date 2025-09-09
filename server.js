@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 
 // Intialize express, dotenv and assign port
 const app = express();
-const port = 5000;
+const port = 3000;
 dotenv.config();
 
 app.use(cors());

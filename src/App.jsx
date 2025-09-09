@@ -11,10 +11,9 @@ import { SpinningCircles } from "react-loading-icons";
 
 function App() {
   // Implement Loading Screen
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);

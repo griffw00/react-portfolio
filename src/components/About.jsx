@@ -36,17 +36,17 @@ const About = () => {
           About Me 👨‍💻
         </h1>
         <p id="about-desc">
-          Hey! My name is Griff and I’m currently studying Computer Science
-          (BCS) at the University of British Columbia and working part-time in
-          Information Technology.
+          Hey! My name is Griff and I’m an ex-Microbiologist studying Computer
+          Science (BCS) at The University of British Columbia.
         </p>
         <p id="about-desc">
-          I'm excited to apply my programming skills and enthusiasm to
-          tech-related internship opportunities for Fall 2024!
+          I just wrapped up an 8 month internship at Global Relay as a Software
+          Engineer in Test. I'm excited to carry what I leanred into my next
+          role and continue growing!
         </p>
         <p>
-          During my free time, you’ll catch me at the gym, swimming, playing
-          video games, or diving into my next personal project.
+          Outside of work, you’ll catch me at the gym, swimming, playing video
+          games, or diving into a personal project.
         </p>
       </div>
     </div>

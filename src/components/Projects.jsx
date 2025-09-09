@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles/projects.css";
 import jfitness from "../assets/jfitness.png";
-import smartscience from "../assets/smartscience.png";
-import gamerecommender from "../assets/gamerecommender.png";
+import brightpath from "../assets/brightpath.png";
+import ubcgreenbot from "../assets/ubcgreenbot.png";
+import videogamelounge from "../assets/videogamelounge.png";
 import malurl from "../assets/mal_url.png";
 import reactportfolio from "../assets/reactportfolio.png";
 import nativetodo from "../assets/native-todo.png";
@@ -27,12 +28,30 @@ import { Cursor } from "react-simple-typewriter";
 const Projects = () => {
   const projectData = [
     {
-      name: "JFitness",
-      technologies: "Java, Swing",
-      image: jfitness,
-      link: "https://github.com/griffw00/java-fitness-app",
+      name: "BrightPath",
+      technologies:
+        "TypeScript, Express, React Native, MongoDB, Llama, OpenRouter",
+      image: brightpath,
+      link: "https://github.com/griffw00/nwhacks-2025",
       description:
-        "Going to the gym is a significant part of my life, which inspired me to create JFitness, an exercise planner designed to help users track their gym schedules and progress. This project was created for CPSC 210 and taught me fundamental programming skills such as Object-Oriented Programming (OOP), unit testing, and good software design principles.",
+        "BrightPath combines journaling with AI-powered sentiment analysis to transform reflection into actionable growth. It provides personalized insights, visual mood tracking, and timely crisis support. The app makes mental health awareness more engaging, empowering users to improve both emotional and physical well-being.",
+    },
+    {
+      name: "GreenSpeak",
+      technologies:
+        "Python, Streamlit, AWS Lambda, AWS Bedrock, AWS S3, AWS OpenSearch, Matplotlib",
+      image: ubcgreenbot,
+      link: "https://github.com/griffw00/sustainabilityGenAI",
+      description:
+        "GreenSpeak transforms UBC’s energy data into engaging insights with an AWS-powered chatbot and interactive visualizations. Users can ask questions naturally, receive clear answers, and explore trends through colorful, easy-to-read charts. It’s a friendly tool that makes sustainability and innovation more accessible!",
+    },
+    {
+      name: "Video Game Lounge",
+      technologies: "JavaScript, Node.js, Express, Oracle",
+      image: videogamelounge,
+      link: "https://github.com/griffw00/video-game-forum",
+      description:
+        "A video game discussion forum where users can post, edit, and remove reviews for their favorite games. They can explore existing ratings, filter by genre or score, and discover top games. The platform makes sharing and finding game insights simple and engaging.",
     },
     {
       name: "Malicious URL Detector",
@@ -43,20 +62,12 @@ const Projects = () => {
         "After completing CPSC 330, I was excited to apply my Machine Learning knowledge to a real-world problem. Using a dataset with 400,000+ samples, I trained a Random Forest model to identify malicious URLs with a 93% accuracy rate. I then created an easy-to-use interface with Flask and Bootstrap so others can see the model in action. This side project is ongoing, and I’m currently refining it and working on a Google Chrome extension!",
     },
     {
-      name: "Chef Bot (CIC Hackathon 2024)",
-      technologies: "Python, AWS Bedrock",
-      image: chefbot,
-      link: "https://github.com/griffw00/CIC-Hackathon",
+      name: "JFitness",
+      technologies: "Java, JUnit, Swing",
+      image: jfitness,
+      link: "https://github.com/griffw00/java-fitness-app",
       description:
-        "During the UBC CIC Hackathon (2024), our team implemented an AI chatbot using AWS Bedrock's foundation models. By applying retrieval-augmented generation (RAG) on a large recipe dataset, Chef Bot suggests recipes in response to user prompts. This project was an amazing opportunity to explore AWS technologies, sharpen my python skills, and experience firsthand how powerful AI can be in creating useful and interactive tools!",
-    },
-    {
-      name: "Portfolio",
-      technologies: "React",
-      image: reactportfolio,
-      link: "https://github.com/griffw00/react-portfolio",
-      description:
-        "My very first personal portfolio! Throughout this project, I've had the opportunity to refine my skills in React and JavaScript. This project served as a platform for me to expand my knowledge base by learning and integrating numerous JavaScript libraries such as React, EmailJS, and Chakra UI. Through the process of building this portfolio, I gained valuable experience in project management, design implementation, and showcasing my skills and projects effectively.",
+        "A dynamic workout scheduler that allows users to create custom exercise plans and adjust routines throughout the week. The app tracks progress and provides a clear overview of upcoming workouts. It makes fitness planning simple, flexible, and motivating!",
     },
     {
       name: "Mobile Task Tracker",
@@ -65,22 +76,6 @@ const Projects = () => {
       link: "https://github.com/griffw00/native-todo-list",
       description:
         "My first mobile application! This mobile task tracker is a CRUD application with an intuitive UI, built using TypeScript and React Native. Through this project, I was able to learn the fundamentals of TypeScript and learn how to create functional components for mobile applications.",
-    },
-    {
-      name: "Cloud Vendor API",
-      technologies: "Java, Spring Boot",
-      image: restapi,
-      link: "https://github.com/griffw00/spring-boot-rest-api",
-      description:
-        "An API that was built using Java and Spring Boot. My API adheres to RESTful principles and allows users to manage cloud vendor information through HTTP requests. This project was a great way to solidify my Java skills and served as my introduction to the Spring framework.",
-    },
-    {
-      name: "Smart Science (BCS Hackathon 2024)",
-      technologies: "React",
-      image: smartscience,
-      link: "https://github.com/griffw00/bcs-hack-app",
-      description:
-        "Our team, inspired by our background in the life sciences, created an interactive and educational science tool for children. This hackathon was my first exposure to React and Git, where I gained a solid understanding of React components, state management, hooks, and essential Git operations such as branching, committing changes, and merging code",
     },
   ];
 
