@@ -7,11 +7,11 @@ import "./styles/hero.css";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Programmer",
+      "Software Developer",
       "Cat Owner",
       "Microbiologist",
       "Gamer",
-      "Bubble Tea Addict",
+      "Burger Lover",
     ],
     loop: 0,
     typeSpeed: 75,

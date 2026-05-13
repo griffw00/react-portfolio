@@ -4,6 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -74,6 +75,9 @@ function App() {
           <Hero />
           <div className="hidden">
             <About />
+          </div>
+          <div className="hidden">
+            <Experience />
           </div>
           <div className="hidden">
             <Projects />

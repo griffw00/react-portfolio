@@ -76,6 +76,88 @@
   margin-left: 5px;
 }
 
+.experience-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.experience-card {
+  align-items: flex-start;
+  background: #f4f0ff;
+  border: 1px solid rgba(92, 40, 215, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(92, 40, 215, 0.14);
+  display: flex;
+  gap: 26px;
+  padding: 30px 34px;
+  width: 100%;
+}
+
+.experience-card-icon-wrapper {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex: 0 0 78px;
+  height: 78px;
+  justify-content: center;
+  width: 78px;
+}
+
+.experience-card-icon {
+  height: 42px;
+  object-fit: contain;
+  width: 42px;
+}
+
+.experience-card-content {
+  min-width: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.experience-card-title {
+  color: #1f2430;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.experience-card-date {
+  color: grey;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.experience-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.experience-tech-pill {
+  background: #5c28d7;
+  border-radius: 6px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  padding: 7px 10px;
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
   .project-image {
@@ -90,6 +172,40 @@
 
   .chakra-text {
     font-size: 11px;
+  }
+
+  .experience-tech-list {
+    gap: 6px;
+  }
+
+  .experience-card {
+    border-radius: 14px;
+    gap: 16px;
+    padding: 24px 20px;
+  }
+
+  .experience-card-icon-wrapper {
+    flex-basis: 56px;
+    height: 56px;
+    width: 56px;
+  }
+
+  .experience-card-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .experience-card-title {
+    font-size: 18px;
+  }
+
+  .experience-card-date {
+    font-size: 12px;
+  }
+
+  .experience-tech-pill {
+    font-size: 10px;
+    padding: 6px 8px;
   }
 
   .accordion-panel {

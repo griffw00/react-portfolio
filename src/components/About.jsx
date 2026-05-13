@@ -36,17 +36,19 @@ const About = () => {
           About Me 👨‍💻
         </h1>
         <p id="about-desc">
-          Hey! My name is Griff and I’m an ex-Microbiologist studying Computer
-          Science (BCS) at The University of British Columbia.
+          Hey! I’m an ex-Microbiologist studying Computer Science (BCS) at The
+          University of British Columbia.
         </p>
         <p id="about-desc">
-          I just wrapped up an 8 month internship at Global Relay as a Software
-          Engineer in Test. I'm excited to carry what I leanred into my next
-          role and continue growing!
+          I am currently a Software Developer Co-op shipping exciting features
+          at an early stage startup, and previously completed a Software
+          Developer in Test Co-op at a large tech company. I’m passionate about
+          building software that makes a positive impact, and I’m always eager
+          to learn new technologies and take on new challenges!
         </p>
         <p>
-          Outside of work, you’ll catch me at the gym, swimming, playing video
-          games, or diving into a personal project.
+          Outside of work, you’ll catch me at the gym, playing volleyball,
+          gaming, or wrangling code.
         </p>
       </div>
     </div>
