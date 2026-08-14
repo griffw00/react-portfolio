@@ -3,27 +3,24 @@ import "./styles/navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar-container">
-      <nav className="navbar">
-        <ul className="nav--list">
-          <li className="item">
-            <a href="#hero">Home</a>
-          </li>
-          <li className="item">
+    <header className="navbar">
+      <a href="#hero" className="navbar-brand">
+        Griff Wong
+      </a>
+      <nav>
+        <ul className="navbar-links">
+          <li>
             <a href="#about">About</a>
           </li>
-          <li className="item">
+          <li>
             <a href="#experience">Experience</a>
           </li>
-          <li className="item">
+          <li>
             <a href="#projects">Projects</a>
           </li>
-          {/* <li className="item">
-            <a href="#contact">Contact</a>
-          </li> */}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

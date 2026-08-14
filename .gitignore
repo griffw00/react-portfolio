@@ -25,3 +25,6 @@ dist-ssr
 
 # Security
 .env
+
+# Images and media assets
+src/assets/

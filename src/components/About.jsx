@@ -1,57 +1,33 @@
 import React from "react";
 import "./styles/about.css";
-import aboutImage from "../assets/me.jpeg";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div id="about" className="about-container">
-      <div className="about-image">
-        <img src={aboutImage} alt="About" />
-        <div className="icon-container">
-          {/* LinkedIn icon with link */}
-          <a
-            href="https://www.linkedin.com/in/griff-wong"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="about-icon" />
-          </a>
-          {/* GitHub icon with link */}
-          <a
-            href="https://github.com/griffw00"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="about-icon" />
-          </a>
-          {/* Email icon with link */}
-          <a href="mailto:griffytech@gmail.com">
-            <FaEnvelope className="about-icon" />
-          </a>
+    <section id="about" className="section about">
+      <div className="section-grid">
+        <p className="label section-label">01 — About</p>
+        <div className="section-content">
+          <h2 className="about-headline">
+            I build software that people actually enjoy using. Currently a
+            Software Developer Co-op at SOZO Intuition Systems, shipping
+            features at an early-stage startup.
+          </h2>
+          <div className="about-body">
+            <p>
+              I studied Computer Science (BCS) at The University of British
+              Columbia after a career in microbiology. Previously I completed a
+              Software Developer in Test Co-op at a large tech company. I care
+              about systems that are reliable, a pleasure to work with, and
+              make a positive impact.
+            </p>
+            <p>
+              Outside of work, you’ll catch me at the gym, playing volleyball,
+              gaming, or wrangling code.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="about-text">
-        <h1 className="about-header" style={{ color: "#5c28d7" }}>
-          About Me 👨‍💻
-        </h1>
-        <p id="about-desc">
-          Hey! I’m an ex-Microbiologist studying Computer Science (BCS) at The
-          University of British Columbia.
-        </p>
-        <p id="about-desc">
-          I am currently a Software Developer Co-op shipping exciting features
-          at an early stage startup, and previously completed a Software
-          Developer in Test Co-op at a large tech company. I’m passionate about
-          building software that makes a positive impact, and I’m always eager
-          to learn new technologies and take on new challenges!
-        </p>
-        <p>
-          Outside of work, you’ll catch me at the gym, playing volleyball,
-          gaming, or wrangling code.
-        </p>
-      </div>
-    </div>
+    </section>
   );
 };
 
