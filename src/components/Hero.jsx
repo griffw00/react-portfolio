@@ -1,14 +1,13 @@
-import { React } from "react";
-import heroImage from "../assets/cat-yarn.gif";
+import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import icons from react-icons library
+import SocialLinks from "./SocialLinks";
 import "./styles/hero.css";
 
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Software Developer",
-      "Cat Owner",
+      "Cat Dad",
       "Microbiologist",
       "Gamer",
       "Burger Lover",
@@ -19,18 +18,28 @@ const Hero = () => {
   });
 
   return (
-    <div className="hero-container" id="hero">
-      <div className="hero-text">
-        <h2>Hello, my name is</h2>
-        <h1>GRIFF</h1>
-        <h2 style={{ color: "#5c28d7" }}>
-          A {text} <Cursor />
-        </h2>
+    <section className="hero" id="hero">
+      <div className="hero-main">
+        <div className="hero-intro">
+          <h1 className="hero-name">
+            Griff
+            <br />
+            Wong
+          </h1>
+          <p className="hero-typewriter">
+            A {text}
+            <Cursor cursorStyle="|" />
+          </p>
+        </div>
       </div>
-      <div className="hero-image">
-        <img src={heroImage} alt="Hero" />
+
+      <div className="hero-bottom">
+        <SocialLinks />
+        <a href="#about" className="hero-scroll">
+          Scroll <span aria-hidden="true">↓</span>
+        </a>
       </div>
-    </div>
+    </section>
   );
 };
 

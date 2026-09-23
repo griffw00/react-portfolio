@@ -1,235 +1,138 @@
-.projects-container {
+.experience-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 200px;
-}
-
-.projects-header {
-  font-family: "Open Sans", sans-serif;
-  font-size: 50px;
-  text-align: center;
-  margin: 30px;
-}
-
-.project-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-name {
-  font-weight: bold; /* Optional, to differentiate the project name */
-  font-size: 17.5px;
-  font-family: "Open sans", sans-serif;
-}
-
-.project-technologies {
-  color: grey;
-  font-style: italic;
-  font-size: 12.5px;
-  font-family: "Open sans", sans-serif;
-}
-
-.project-desc {
-  display: inline-block;
-  vertical-align: top; /* here */
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-}
-
-.accordion-container {
-  width: 100%; /* Adjust width to match the container */
-  max-width: 1200px; /* Optional: Set a max width */
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1em;
-}
-
-.accordion-button {
-  padding: 1em;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.accordion-panel {
-  font-size: 1em;
-  /* height: 300px; */
-  height: auto; /* Set a fixed height */
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  display: flex;
-}
-
-.accordion-item {
-  height: 80vh; /* Set a fixed height for each item, including button and panel */
-}
-
-.header-wrapper {
-  display: flex;
-  flex-direction: "row";
-  align-items: center;
-}
-
-.github-icon {
-  margin-left: 5px;
-}
-
-.experience-cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  width: 100%;
-  max-width: 900px;
 }
 
 .experience-card {
-  align-items: flex-start;
-  background: #f4f0ff;
-  border: 1px solid rgba(92, 40, 215, 0.18);
-  border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(92, 40, 215, 0.14);
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-card:first-child {
+  padding-top: 0;
+}
+
+.experience-card-top {
   display: flex;
-  gap: 26px;
-  padding: 30px 34px;
-  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
 }
 
-.experience-card-icon-wrapper {
-  align-items: center;
-  background: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  flex: 0 0 78px;
-  height: 78px;
-  justify-content: center;
-  width: 78px;
-}
-
-.experience-card-icon {
-  height: 42px;
-  object-fit: contain;
-  width: 42px;
-}
-
-.experience-card-content {
-  min-width: 0;
-  text-align: left;
-  width: 100%;
-}
-
-.experience-card-title {
-  color: #1f2430;
-  font-family: "Open Sans", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0 0 6px;
+.experience-card-company {
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
 }
 
 .experience-card-date {
-  color: grey;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 700;
-  margin: 0 0 16px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
-.experience-tech-list {
+.experience-card-role {
+  margin-top: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.experience-card-description {
+  margin-top: 1rem;
+  max-width: 40rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--muted-strong);
+}
+
+.tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 18px;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
 }
 
-.experience-tech-pill {
-  background: #5c28d7;
+.tech-tag {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 0.35rem 0.55rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-card {
+  border: 1px solid var(--card-border);
   border-radius: 6px;
-  color: white;
+  padding: 1.75rem 1.6rem 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #4a4a4a;
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-card-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.project-card-link {
+  color: var(--muted);
   display: inline-flex;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1;
-  padding: 7px 10px;
+  transition: color 0.2s ease;
 }
 
-/* Media Queries */
-@media (max-width: 1100px) {
-  .project-image {
-    display: none;
-  }
+.project-card-link:hover {
+  color: var(--text);
 }
 
-@media (max-width: 500px) {
-  .project-image {
-    display: none;
-  }
+.project-card-link svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.6;
+}
 
-  .chakra-text {
-    font-size: 11px;
-  }
+.project-card-description {
+  margin-top: 0.85rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 40rem;
+}
 
-  .experience-tech-list {
-    gap: 6px;
-  }
-
-  .experience-card {
-    border-radius: 14px;
-    gap: 16px;
-    padding: 24px 20px;
-  }
-
-  .experience-card-icon-wrapper {
-    flex-basis: 56px;
-    height: 56px;
-    width: 56px;
-  }
-
-  .experience-card-icon {
-    height: 30px;
-    width: 30px;
-  }
-
-  .experience-card-title {
-    font-size: 18px;
+@media (max-width: 600px) {
+  .experience-card-top {
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .experience-card-date {
-    font-size: 12px;
+    white-space: normal;
   }
 
-  .experience-tech-pill {
-    font-size: 10px;
-    padding: 6px 8px;
-  }
-
-  .accordion-panel {
-    padding: 5;
-    height: 30vh;
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    display: flex;
-  }
-}
-
-@media (max-width: 400px) {
-  .project-image {
-    display: none;
-  }
-
-  .chakra-text {
-    height: 50vh;
-    font-size: 9px;
-  }
-
-  .accordion-panel {
-    display: flex;
-    height: auto;
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    display: flex;
+  .experience-card-company {
+    font-size: 1.25rem;
   }
 }
